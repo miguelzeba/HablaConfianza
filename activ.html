@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividades</title>
+    <link rel="stylesheet" href="css/activ.css">
+    <link href="https://fonts.cdnfonts.com/css/bugaki" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><H2>HABLA CON CONFIANZA</H2></a>
+
+        </div>
+    </header>
+    <div class="titulo">
+        <h1>Cuentos y Trabalenguas</h1>
+        <p>¡Diviértete practicando con cuentos y trabalenguas!</p>
+    </div>
+    <main>
+        <section id="cuentos">
+            <h2>Cuentos</h2>
+            <div class="card-container">
+                <div class="card" onclick="abrirModal('cuento', 1)">
+                    <img src="img/img16.jpg" alt="Imagen de Cuento 1">
+                    <p>La princesa y la sal</p>
+                </div>
+                <div class="card" onclick="abrirModal('cuento', 2)">
+                    <img src="img/img17.jpg" alt="Imagen de Cuento 2">
+                    <p>La torre que alcanzó el cielo</p>
+                </div>
+                <div class="card" onclick="abrirModal('cuento', 3)">
+                    <img src="img/img18.jpg" alt="Imagen de Cuento 3">
+                    <p>La princesa y el guisante</p>
+                </div>
+            </div>
+        </section>
+        <section id="trabalenguas">
+            <h2>Trabalenguas</h2>
+            <div class="card-container">
+                <div class="card" onclick="abrirModal('trabalengua', 1)">
+                    <img src="img/img19.jpg" alt="Imagen de Cuento 1">
+                    <p>Trabalenguas 1</p>
+                </div>
+                <div class="card" onclick="abrirModal('trabalengua', 2)">
+                    <img src="img/img20.jpg" alt="Imagen de Cuento 1">
+                    <p>Trabalenguas 2</p>
+                </div>
+                <div class="card" onclick="abrirModal('trabalengua', 3)">
+                    <img src="img/img21.jpg" alt="Imagen de Cuento 1">
+                    <p>Trabalenguas 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="buttons">
+        <button class="shop-btn" onclick="window.location.href='menu.html'">MENU</button>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <p>© 2024 Habla con Confianza - Todos los derechos reservados  a miguel jiji.</p>
+    </footer>
+    <script src="js/act.js"></script>
+</body>
+</html>

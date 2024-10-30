@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juego1</title>
+    <link rel="stylesheet" href="css/juego1.css">
+    <link href="https://fonts.cdnfonts.com/css/bugaki" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><H2>HABLA CON CONFIANZA</H2></a>
+        </div>
+    </header>
+    <div class="Juego">
+        <h1>Atrapa las Palabras con la Cesta y repite en voz alta cada palabra que atrapes</h1>
+        <p>¡Mueve la cesta con las flechas izquierda y derecha para atrapar las palabras que caen!</p>
+    </div>
+    <div id="game-container">
+        <div id="basket" class="basket"></div> <!-- Cesta -->
+    </div>
+    <div class="footer">
+        <p>Puntos: <span id="score">0</span></p>
+        <p>Palabras atrapadas: <span id="word-count">0</span></p>
+        <p>Tiempo restante: <span id="time">30</span> segundos</p>
+    </div>
+    <div id="game-over" class="game-over">
+        <h2>¡Juego terminado!</h2>
+        <p>Puntuación final: <span id="final-score">0</span></p>
+        <p>Total de palabras atrapadas: <span id="final-word-count">0</span></p>
+        <button id="restart-game">Jugar de nuevo</button>
+        <button onclick="window.location.href='juemenu.html'">volver</button>
+    </div>
+    
+    <footer>
+        <p>© 2024 Habla con Confianza - Sistemas Informaticos.</p>
+    </footer>
+    <script src="js/js1.js"></script>
+</body>
+</html>

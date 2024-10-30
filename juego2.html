@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juego2</title>
+    <link rel="stylesheet" href="css/juego2.css">
+    <link href="https://fonts.cdnfonts.com/css/bugaki" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><H2>HABLA CON CONFIANZA</H2></a>
+        </div>
+    </header>
+    <div class="Juego">
+        <h1>Nombra cada figura con su artículo, y repite en voz alta cada figura </h1>
+    </div>
+    <div class="articles">
+        <!-- Los artículos se repiten para permitir arrastrar múltiples veces -->
+        <div class="article" draggable="true" id="el">El</div>
+        <div class="article" draggable="true" id="la">La</div>
+        <div class="article" draggable="true" id="los">Los</div>
+        <div class="article" draggable="true" id="las">Las</div>
+    </div>
+
+    <div class="images">
+        <!-- Contenedores de imágenes con data-article para verificar las respuestas -->
+        <div class="image-container" data-article="el">
+            <img src="img/img7.png" alt="Pájaro" class="dropzone">
+        </div>
+        <div class="image-container" data-article="las">
+            <img src="img/img8.png" alt="tela" class="dropzone">
+        </div>
+        <div class="image-container" data-article="los">
+            <img src="img/img9.png" alt="Papas fritas" class="dropzone">
+        </div>
+        <div class="image-container" data-article="el">
+            <img src="img/img10.png" alt="Uva" class="dropzone">
+        </div>
+        <div class="image-container" data-article="los">
+            <img src="img/img6.png" alt="Lápices" class="dropzone">
+        </div>
+        <div class="image-container" data-article="las">
+            <img src="img/img11.png" alt="Lápices" class="dropzone">
+        </div>
+        <div class="image-container" data-article="la">
+            <img src="img/img12.png" alt="Lápices" class="dropzone">
+        </div>
+        <div class="image-container" data-article="la">
+            <img src="img/img13.png" alt="Lápices" class="dropzone">
+        </div>
+        <div class="image-container" data-article="el">
+            <img src="img/img14.png" alt="Lápices" class="dropzone">
+        </div>
+        <div class="image-container" data-article="los">
+            <img src="img/img15.png" alt="Lápices" class="dropzone">
+        </div>
+        
+    </div>
+    <div class="comprobar">
+        <button id="check-answers">Comprobar Respuestas</button>
+    </div>
+   
+    <div id="result"></div>
+
+    <!-- Botones extra -->
+    <div id="buttons-container" style="display: none;">
+        <button id="play-again">Volver a jugar</button>
+        <button id="go-back">Volver</button>
+    </div>
+
+    <script src="js/js2.js"></script>
+
+    <footer>
+        <p>© 2024 Habla con Confianza - Sistemas Informaticos.</p>
+    </footer>
+</body>
+</html>

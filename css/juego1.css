@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: #000000;
+
+    background-image: url(../img/img2.jpg);  /* Reemplaza con la URL o ruta de tu imagen */
+    background-size: cover;              /* Cubre todo el área de la página */
+    background-position: center;         /* Centra la imagen */
+    background-repeat: no-repeat;        /* Evita que la imagen se repita */
+    background-attachment: fixed;        /* La imagen no se mueve al hacer scroll */
+}
+
+header {
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    
+}
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: rgb(0, 0, 0); /* Cambia el color del texto */
+}
+
+a:hover {
+    color: rgb(0, 0, 0); /* Cambia el color al pasar el ratón sobre el texto */
+}
+
+
+.Juego h1{
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+.Juego p{
+    text-align: center;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 2px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  /*  position: fixed;*/
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #64ceee38;
+    overflow: hidden;
+}
+
+.basket {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #195cb4;
+    bottom: 10px;
+    left: 50%;  /* Inicia centrada */
+    transform: translateX(-50%);
+}
+
+.word {
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #195cb48f;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+#game-over {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border: 2px solid #195cb4;
+    text-align: center;
+    display: none;
+}
+
+#game-over button {
+    padding: 10px 20px;
+    background-color: #195cb4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#game-over button:hover {
+    background-color: #195cb4a9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero{
+        padding: 50px;
+    }
+  
+}
